@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"id": "mineserv",
+	"version": "${version}",
+	"name": "Mineserv",
+	"description": "Remote Discord server management and log streaming for Minecraft 26.3",
+	"environment": "server",
+	"entrypoints": {
+		"server": [
+		"com.mineserv.MineServ"
+		]
+	},
+	"mixins": [
+    	"mineserv.mixins.json"
+  	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
